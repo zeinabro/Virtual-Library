@@ -17,7 +17,6 @@ class Book extends Media{
         let highest = 0;
         let idx = -1
         books.forEach((book,i) => {
-            console.log(book)
             if(book.rating>highest){
                 highest=book.rating
                 idx=i
