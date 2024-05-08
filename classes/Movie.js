@@ -24,6 +24,12 @@ class Movie extends Media {
         });
         return movies[idx]
     }
+
+    static calculateAverageRating(movies){
+        let avgSum = 0;
+        movies.forEach(movie => avgSum+=movie.rating)
+        return avgSum/movies.length
+    }
 }
 // don't change below
 module.exports = Movie;

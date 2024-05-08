@@ -25,6 +25,12 @@ class Book extends Media{
         return books[idx]
     }
 
+    static calculateAverageRating(books){
+        let avgSum = 0;
+        books.forEach(book => avgSum+=book.rating)
+        return avgSum/books.length
+    }
+
 }
 
 // don't change below
